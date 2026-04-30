@@ -90,7 +90,9 @@
 ## 八、活動照片與佐證
 
 活動宣傳：
-![alt text](image-38.png)
+
+![](image-38.png)
+
 ![](image-39.png)
 
 ![](image-40.png)

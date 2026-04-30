@@ -1,0 +1,52 @@
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage[
+  Dingbats,
+  Arrows,
+  MathematicalOperators,
+  MiscellaneousSymbols
+]{ucharclasses}
+
+\IfFontExistsTF{Arial Unicode MS}{%
+  \newfontfamily\symbolfallback{Arial Unicode MS}%
+}{%
+  \IfFontExistsTF{Noto Sans Symbols 2}{%
+    \newfontfamily\symbolfallback{Noto Sans Symbols 2}%
+  }{%
+    \IfFontExistsTF{DejaVu Sans}{%
+      \newfontfamily\symbolfallback{DejaVu Sans}%
+    }{%
+      \newfontfamily\symbolfallback[Path=fonts/]{BiauKai.ttc}%
+    }%
+  }%
+}
+
+\setTransitionsFor{Dingbats}{\symbolfallback}{\normalfont}
+\setTransitionsFor{Arrows}{\symbolfallback}{\normalfont}
+\setTransitionsFor{MathematicalOperators}{\symbolfallback}{\normalfont}
+\setTransitionsFor{MiscellaneousSymbols}{\symbolfallback}{\normalfont}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+\XeTeXlinebreakpenalty = 0
+\emergencystretch=3em
+\sloppy
+
+\makeatletter
+\@ifundefined{pandocbounded}{}{%
+  \renewcommand{\pandocbounded}[1]{%
+    \par\noindent
+    \begin{center}
+    \setkeys{Gin}{width=\linewidth,height=0.68\textheight,keepaspectratio}%
+    #1%
+    \end{center}
+    \par
+  }%
+}
+\makeatother
+
+\AtBeginEnvironment{longtable}{%
+  \small
+  \setlength{\tabcolsep}{3pt}%
+  \renewcommand{\arraystretch}{1.12}%
+}

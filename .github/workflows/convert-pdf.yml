@@ -18,30 +18,66 @@ jobs:
       - name: Install Pandoc & XeLaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra texlive-lang-chinese
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra texlive-lang-chinese fonts-noto-core fonts-noto-extra
 
       - name: Setup BiauKai font & header
         run: |
           # Create a CI-specific header.tex that uses absolute path to font
           FONT_DIR="${GITHUB_WORKSPACE}/fonts"
           cat > /tmp/header-ci.tex << EOF
+          \usepackage{etoolbox}
+          \usepackage{graphicx}
+          \usepackage[
+            Dingbats,
+            Arrows,
+            MathematicalOperators,
+            MiscellaneousSymbols
+          ]{ucharclasses}
           \usepackage{xeCJK}
           \setCJKmainfont[
             Path = ${FONT_DIR}/,
             Extension = .ttc,
             FontIndex = 0,
-            Scale = 1.25
+            Scale = 1.0
           ]{BiauKai}
           \setmainfont[
             Path = ${FONT_DIR}/,
             Extension = .ttc,
             FontIndex = 0,
-            Scale = 1.25
+            Scale = 1.0
           ]{BiauKai}
+          \IfFontExistsTF{Noto Sans Symbols 2}{
+            \newfontfamily\symbolfallback{Noto Sans Symbols 2}
+          }{
+            \newfontfamily\symbolfallback{DejaVu Sans}
+          }
+          \setTransitionsFor{Dingbats}{\symbolfallback}{\normalfont}
+          \setTransitionsFor{Arrows}{\symbolfallback}{\normalfont}
+          \setTransitionsFor{MathematicalOperators}{\symbolfallback}{\normalfont}
+          \setTransitionsFor{MiscellaneousSymbols}{\symbolfallback}{\normalfont}
           \XeTeXlinebreaklocale "zh"
           \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
           \XeTeXlinebreakpenalty = 0
           \xeCJKsetup{CJKecglue = {\hskip 0.15em plus 0.08em minus 0.08em}}
+          \emergencystretch=3em
+          \sloppy
+          \makeatletter
+          \@ifundefined{pandocbounded}{}{
+            \renewcommand{\pandocbounded}[1]{
+              \par\noindent
+              \begin{center}
+              \setkeys{Gin}{width=\linewidth,height=0.68\textheight,keepaspectratio}
+              #1
+              \end{center}
+              \par
+            }
+          }
+          \makeatother
+          \AtBeginEnvironment{longtable}{
+            \small
+            \setlength{\tabcolsep}{3pt}
+            \renewcommand{\arraystretch}{1.12}
+          }
           EOF
           echo "=== header-ci.tex ==="
           cat /tmp/header-ci.tex
@@ -56,7 +92,7 @@ jobs:
               --pdf-engine=xelatex \
               -H /tmp/header-ci.tex \
               -V fontsize=18pt \
-              -V geometry:margin=2cm \
+              -V geometry:margin=1.8cm \
               --resource-path=. \
               || echo "⚠️ FAILED: $f"
           done
@@ -71,7 +107,7 @@ jobs:
               --pdf-engine=xelatex \
               -H /tmp/header-ci.tex \
               -V fontsize=12pt \
-              -V geometry:margin=2cm \
+              -V geometry:margin=1.8cm \
               --resource-path=. \
               || echo "⚠️ FAILED: $f"
           done
@@ -86,7 +122,7 @@ jobs:
               --pdf-engine=xelatex \
               -H /tmp/header-ci.tex \
               -V fontsize=12pt \
-              -V geometry:margin=2cm \
+              -V geometry:margin=1.8cm \
               --resource-path=. \
               || echo "⚠️ FAILED: $f"
           done

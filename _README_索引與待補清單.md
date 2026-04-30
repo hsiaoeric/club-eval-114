@@ -176,6 +176,7 @@ brew install --cask basictex   # 中文需要安裝 TeX
 cd "評鑑檔本/共通性"
 for f in *.md; do
   pandoc "$f" -o "${f%.md}.pdf" --pdf-engine=xelatex \
+    -H ../pdf-style-submission.tex \
     -V mainfont="PingFang TC" -V geometry:margin=2cm
 done
 ```

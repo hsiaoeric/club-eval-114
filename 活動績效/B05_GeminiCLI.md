@@ -34,6 +34,7 @@
 | 20:15–20:35 | 會後交流 / Close |
 
 **核心內容**：
+
 1. **強大操作能力**：實際操作本機檔案系統、執行指令、搜尋網路
 2. **終端機指令整合**：使用 `!` 符號執行終端機指令（如 `!ls -l`）
 3. **高擴充性**：支援 MCP（Model Context Protocol），讓 LLM 安全高效地整合及存取外部工具和數據
@@ -78,8 +79,12 @@
 
 ## 八、活動照片與佐證
 
-![alt text](image-11.png)
+![](image-11.png)
+
 ![](image-6.png)
+
 ![](image-7.png)
-![alt text](image-8.png)
-![alt text](image-9.png)
+
+![](image-8.png)
+
+![](image-9.png)

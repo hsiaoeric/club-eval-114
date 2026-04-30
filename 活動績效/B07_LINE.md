@@ -50,16 +50,20 @@
 ## 七、活動照片與佐證
 
 活動照：
-![alt text](image.png)
+
+![](image.png)
 
 大合照：
-![alt text](image-2.png)
+
+![](image-2.png)
 
 幹部合照:
-![alt text](image-1.png)
+
+![](image-1.png)
 
 回顧貼文：
-![alt text](image-3.png)
+
+![](image-3.png)
 
 <!-- ---
 

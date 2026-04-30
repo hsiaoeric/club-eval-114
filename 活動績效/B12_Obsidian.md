@@ -91,10 +91,13 @@
 - 補充教材：「Obsidian setup 手冊.docx」
 - Bevy 預售統計：「google-gdg-on-campus-taipei-medical-university-...obsidian-zhi-shi-guan-li-gong-zuo-fang-2_pre_order_survey_stats.csv」
 宣傳：
-![alt text](image-46.png)
 
-![alt text](image-48.png)
-![alt text](image-47.png)
+![](image-46.png)
+
+![](image-48.png)
+
+![](image-47.png)
 
 回顧：
+
 ![](image-45.png)

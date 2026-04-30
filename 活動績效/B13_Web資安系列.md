@@ -129,7 +129,7 @@
 | 「這場講座讓您有什麼收穫或啟發？」 | 「印象最深刻的部分」 |
 |-----------------------------------|---------------------|
 | 「html, CSS 的一些用法在 notion 有用過 但今天才知道是什麼」 | 「html, CSS」 |
-| 「很有趣的分享，學到很多酷東西👍🏻」 | 「第一次體驗到 capture the flag 還蠻有趣的」 |
+| 「很有趣的分享，學到很多酷東西」 | 「第一次體驗到 capture the flag 還蠻有趣的」 |
 | 「資安好玩」 | 「得知別人密碼」|
 | 「對SQL跟URL有初步認識！」 | 「Keynote簡報的動畫教學」 |
 
@@ -143,10 +143,13 @@
 ## 十一、活動照片與佐證
 
 
-![alt text](b13-image-4.png)
-![alt text](b13-image-1.png)
-![alt text](b13-image-2.png)
-![alt text](b13-image-3.png)
+![](b13-image-4.png)
+
+![](b13-image-1.png)
+
+![](b13-image-2.png)
+
+![](b13-image-3.png)
 
 
 

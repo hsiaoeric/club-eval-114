@@ -23,6 +23,7 @@
 ## 三、活動內容與流程
 
 線上分享將帶學員一窺：
+
 1. Google STEP Intern 申請流程
 2. Google 實習豐富福利
 3. Google 辦公室設施
@@ -63,9 +64,11 @@
 ## 八、活動照片與佐證
 
 活動宣傳：
+
 ![](image-27.png)
 
-![alt text](image-26.png)
+![](image-26.png)
 
 Q&A:
-![alt text](image-28.png)
+
+![](image-28.png)

@@ -86,11 +86,15 @@
 ## 八、活動照片與佐證
 
 活動宣傳：
-![alt text](image-34.png)
 
-![alt text](image-36.png)
-![alt text](image-37.png)
-![alt text](image-35.png)
+![](image-34.png)
+
+![](image-36.png)
+
+![](image-37.png)
+
+![](image-35.png)
 
 回顧：
+
 ![](image-33.png)

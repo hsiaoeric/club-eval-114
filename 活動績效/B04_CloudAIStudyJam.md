@@ -66,5 +66,7 @@
 ## 八、活動照片與佐證
 
 ![](image-13.png)
-![alt text](image-12.png)
-![alt text](image-14.png)
+
+![](image-12.png)
+
+![](image-14.png)

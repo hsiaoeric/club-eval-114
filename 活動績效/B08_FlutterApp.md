@@ -57,11 +57,13 @@
 ## 七、活動照片與佐證
 
 活動宣傳：
-![alt text](image-29.png)
 
-![alt text](image-30.png)
+![](image-29.png)
 
-![alt text](image-31.png)
+![](image-30.png)
+
+![](image-31.png)
 
 回顧：
-![alt text](image-32.png)
+
+![](image-32.png)

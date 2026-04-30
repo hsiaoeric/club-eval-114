@@ -73,13 +73,16 @@
 ## 八、活動照片與佐證
 
 宣傳：
-![alt text](image-22.png)
 
-![alt text](image-24.png)
-![alt text](image-23.png)
+![](image-22.png)
+
+![](image-24.png)
+
+![](image-23.png)
 
 回顧：
-![alt text](image-25.png)
+
+![](image-25.png)
 
 ## 九、Bevy 平台官方頁面
 
