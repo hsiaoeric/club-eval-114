@@ -79,21 +79,17 @@
 
 ## 八、活動照片與佐證
 
+
 - 照片：「PXL_20260316_102235084.jpg」
 - 照片資料夾：「照片記錄」
 - 講師簡報：「Zettelkasten & Obsidian.pptx」
 - 補充教材：「Obsidian setup 手冊.docx」
 - Bevy 預售統計：「google-gdg-on-campus-taipei-medical-university-...obsidian-zhi-shi-guan-li-gong-zuo-fang-2_pre_order_survey_stats.csv」
+宣傳：
+![alt text](image-46.png)
 
-## 九、講師金句
+![alt text](image-48.png)
+![alt text](image-47.png)
 
-> 「效率至上」——洪偉倫 Stephen（牙醫五）
-
----
-
-## 附件
-
-- 講師簡報 + Obsidian setup 手冊
-- 回饋表單（9 份回應，平均 4.78/5）
-- 簽到單
-- 活動照片
+回顧：
+![](image-45.png)
