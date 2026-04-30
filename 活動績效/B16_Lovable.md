@@ -1,4 +1,4 @@
-# B16｜Google 協作平台 × Lovable 實作工作坊 結案報告
+# B14｜Google 協作平台 × Lovable 實作工作坊 結案報告
 
 ## 一、活動基本資訊
 
